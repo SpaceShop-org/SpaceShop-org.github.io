@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceShop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles-css/header.css">
+    <link rel="stylesheet" href="styles-css/main.css">
+    <link rel="stylesheet" href="styles-css/sidebar.css">
+    <script src="sidebar.js"></script>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header">
-        <h1>SpaceShop</h1>
-    </header>
-
-    <!-- Contenido Principal -->
-    <section class="work-container">
-        <h2>Algunos trabajos</h2>
-        <div class="work-grid">
-            <div class="work-item"></div>
-            <div class="work-item"></div>
-            <div class="work-item"></div>
-            <div class="work-item"></div>
+    <header id="header">
+        <div class="title-container">
+            <h1 class="title">SpaceShop</h1>
+            <p class="subtitle">
+                <span class="keyword">Viste</span> tus sueños, <span class="keyword">nosotros</span> los hacemos <span class="keyword">realidad</span>.
+            </p>
+            <button class="cta-button">Explora Diseños</button>
         </div>
-    </section>
-    
-    <!-- Zona de Opciones -->
-        <section class="options-section">
-            <button class="upload-design">Sube tu diseño</button>
-            <button class="use-templates">En base a plantillas</button>
-        </section>
+        <div class="decorative-line"></div>
+    </header>
+    <main id="main">
+        <div class="content-container">
+            <h2>Algunos de nuestros trabajos</h2>
+            <div class="works-grid">
+                <!-- Plantilla de trabajos (puedes duplicar estas divs para añadir más) -->
+                <div class="work-item">Trabajo 1</div>
+                <div class="work-item">Trabajo 2</div>
+                <div class="work-item">Trabajo 3</div>
+                <div class="work-item">Trabajo 4</div>
+            </div>
+            <a href="works.html" class="view-more">Ver más</a>
+        </div>
     </main>
-
-    <!-- Barra Lateral -->
-    <aside class="sidebar">
-        <ul>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#reservar">Reservar</a></li>
-            <li><a href="#conocenos">Conócenos</a></li>
-        </ul>
-    </aside>
+    <aside id="sidebar">
+        <nav class="sidebar-content">
+           <ul>
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="explorar.html">Explorar Diseños</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+           </ul>
+           <div class="actions">
+               <a href="reservar.html" class="btn-action">Reservar Diseño</a>
+               <a href="subir.html" class="btn-action">Sube tu Diseño</a>
+           </div>
+           <div class="social-links">
+               <a href="#" class="social-icon">FB</a>
+               <a href="#" class="social-icon">IG</a>
+               <a href="#" class="social-icon">TW</a>
+           </div>
+       </nav>
+   </aside>
 </body>
 </html>

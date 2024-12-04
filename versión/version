@@ -1,0 +1,53 @@
+Versión: 1.1.01
+Fecha: 05/12/2024
+Componentes Actualizados: Barra Lateral (sidebar)
+
+Cambios Implementados
+Funcionalidad Principal:
+
+Barra lateral interactiva diseñada para ser oculta/visible al pasar el ratón sobre un "dock" lateral.
+Ubicación predeterminada: lado izquierdo de la pantalla.
+Soporte para contenido dinámico (hipervínculos y secciones específicas).
+Estructura y Organización:
+
+Archivos CSS y JavaScript separados para facilitar el mantenimiento:
+CSS: assets/sidebar-left/style.css
+JS: assets/sidebar-left/script.js
+Comentarios incluidos en ambos archivos para identificar cada sección de código.
+Animaciones:
+
+Animación fluida de expansión y contracción utilizando la propiedad transition de CSS.
+Tiempo de animación: 0.3 segundos para un efecto suave.
+Contenido Inicial:
+
+Hipervínculos básicos con las siguientes secciones:
+Inicio: Redirige al archivo principal.
+Reservar: Permite a los usuarios iniciar una reserva.
+Conócenos: Proporciona información sobre el equipo y la empresa.
+Diseño Adaptativo:
+
+Estilos diseñados para pantallas pequeñas y grandes:
+Ancho contraído: 40px.
+Ancho expandido: 250px.
+Mantiene proporciones adecuadas sin afectar el diseño general.
+Cambios Pendientes (Futuros):
+Soporte para Personalización:
+
+Configuración para elegir entre barra izquierda o barra derecha.
+Opción para que los usuarios configuren elementos del menú dinámicamente.
+Optimización del Código:
+
+Reducción de dependencias en JavaScript para mejorar la eficiencia.
+Implementación de un sistema modular para facilitar nuevas funcionalidades.
+Integración de Nuevas Secciones:
+
+Añadir más enlaces relacionados con la tienda, como:
+Historial de compras.
+Creador de diseños personalizados.
+Archivos Relacionados en la Versión 1.1.01:
+assets/sidebar-left/style.css:
+
+Contiene los estilos de la barra lateral (colores, animaciones y diseño adaptativo).
+assets/sidebar-left/script.js:
+
+Maneja las interacciones y eventos, como el hover para expandir y contraer.
