@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #13131d;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    transition: top 0,3s ease;
+}
+
+.header.hiden {
+    top: -60;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header-title span {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0,3s ease;
+}
+
+.header-title span:hover {
+    transform: rotate(-10deg) scale(1.2);
+}
+
+.header-title span:nth-child(1) {color: #ff6b6b;}
+.header-title span:nth-child(2) {color: #ffa36c;}
+.header-title span:nth-child(3) {color: #ffd36b;}
+.header-title span:nth-child(4) {color: #91ff6b;}
+.header-title span:nth-child(5) {color: #6bd6ff;}
+.header-title span:nth-child(6) {color: #a36bff;}
+.header-title span:nth-child(7) {color: #ff6bd1;}
+.header-title span:nth-child(8) {color: #3cd2f4;}
+.header-title span:nth-child(9) {color: #ae10d5;}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.post {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2a2a3d;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.post-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    background-color: #4a4a5d;
+    border-radius: 10px;
+    border-color: #e0e0e0;
+    margin-right: 20px;
+    height: auto;
+}
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+}
+
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+}
